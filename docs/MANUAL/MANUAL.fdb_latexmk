@@ -1,11 +1,12 @@
 # Fdb version 3
-["pdflatex"] 1526689413 "/Users/AzimeX/Documents/practice/ncurses/immerse/v2/docs/MANUAL/MANUAL.tex" "MANUAL.pdf" "MANUAL" 1526689414
-  "/Users/AzimeX/Documents/practice/ncurses/immerse/v2/docs/MANUAL/MANUAL.tex" 1526689413 535 b610011b686f7015886919a60fa6a3ea ""
+["pdflatex"] 1526690379 "/Users/AzimeX/Documents/practice/ncurses/immerse/docs/MANUAL/MANUAL.tex" "MANUAL.pdf" "MANUAL" 1526690380
+  "/Users/AzimeX/Documents/practice/ncurses/immerse/docs/MANUAL/MANUAL.tex" 1526690379 540 bc16ca077e25f98451fe8e0bd1d39141 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1480098701 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1480098701 1292 21c1c5bfeaebccffdb478fd231a0997d ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr9.tfm" 1480098701 1292 6b21b9c2c7bebb38aa2273f7ca0fb3af ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsl10.tfm" 1480098701 1508 efecb4a315fe0975509670a272d75ef5 ""
+  "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1480098733 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1480098733 32362 179c33bbf43f19adbb3825bb4e36e57a ""
   "/usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty" 1480098815 1458 43ab4710dc82f3edeabecd0d099626b2 ""
   "/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty" 1480098815 7324 2310d1247db0114eb4726807c8837a0e ""
@@ -26,9 +27,9 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "MANUAL.aux" 1526689414 103 f2bb85353c792ae8de4764de87cdd099 ""
-  "MANUAL.tex" 1526689413 535 b610011b686f7015886919a60fa6a3ea ""
+  "MANUAL.aux" 1526690380 103 74aec0db75eeb5673e68a46cf33b892d ""
+  "MANUAL.tex" 1526690379 540 bc16ca077e25f98451fe8e0bd1d39141 ""
   (generated)
-  "MANUAL.aux"
-  "MANUAL.pdf"
   "MANUAL.log"
+  "MANUAL.pdf"
+  "MANUAL.aux"
