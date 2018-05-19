@@ -48,7 +48,7 @@ bool Screen::kbhit(){
 		return false;
 }
 
-void Screen::drawChar(int Y, int X, char ch){
+void Screen::putch(int Y, int X, char ch){
 	mvaddch(Y, X, ch); 
 	refresh();
 }

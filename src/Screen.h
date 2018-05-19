@@ -13,7 +13,7 @@ public:
 	int getRows();
 	int getColumns();
 	bool kbhit();
-	void drawChar(int Y, int X, char ch);
+	void putch(int Y, int X, char ch);
 	~Screen();
 };
 
