@@ -1,2 +1,4 @@
+# Ignore everything in Manual folder
 docs/MANUAL/*
+# Except
 !docs/MANUAL/MANUAL.tex
