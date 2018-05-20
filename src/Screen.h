@@ -2,6 +2,7 @@
 #define SCREEN_H
 
 #include <ncurses.h>
+#include <string>
 #include <stdlib.h>	//exit()
 
 class Screen{
