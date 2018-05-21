@@ -49,7 +49,12 @@ bool Screen::kbhit(){
 }
 
 void Screen::putch(int Y, int X, char ch){
+	init_pair(1, COLOR_RED, COLOR_RED);
+	attron(A_BOLD);
+	attron(COLOR_PAIR(1));
 	mvaddch(Y, X, ch); 
+	attroff(A_BOLD);
+	attroff(COLOR_PAIR(1));
 	refresh();
 }
 
