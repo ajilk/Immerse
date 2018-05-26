@@ -5,28 +5,32 @@
 #include <cmath>
 
 struct Coordinate{ 
-	int X, Y;
+	int X, Y, Z;
+	Coordinate() : Coordinate(0,0,0) {}
+	Coordinate(int X, int Y, int Z) { this->X = X; this->Y = Y; this->Z = Z; }
 	bool operator==(const Coordinate& p1){ 
-		return (this->X == p1.X && this->Y == p1.Y);
+		return (this->X == p1.X && this->Y == p1.Y && this->Z == Z);
 	}
+	// // Converts coordinates from 3D > 2D
+	// void convert() {
+	// 	return Coordinate(this->Y, this->X);
+	// }
 };
-enum Quadrant{ I, II, III, IV };
 
 /* 
 	Refers to different vertexs/coordinates in space
 */
 class Vertex{
 private:
-	Coordinate cartesian;
-	Coordinate absolute;
-	Quadrant quadrant;
+	Coordinate c3D;
+	Coordinate c2D;
 public:
-	Vertex();
-	Vertex(int Y, int X);
-	Coordinate getAbsolute() { return absolute; }
-	Coordinate getCartesian() { return cartesian; }
-	void convert(Screen &screen);
-	void print(int Y, int X, Screen &screen);
+	Vertex() : Vertex(0,0,0) {};
+	Vertex(int Y, int X, int Z) { c3D.Y = Y; c3D.X = X; c3D.Z = Z; };
+
+	Coordinate get3D() const { return c3D; }
+	Coordinate get2D() const { return c2D; }
+
 	Vertex& operator=(const Vertex& otherVertex);
 	bool operator==(const Vertex& otherVertex);
 
