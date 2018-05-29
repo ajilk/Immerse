@@ -42,6 +42,16 @@
 // }
 
 /*
+	Function:	move vertex by the specified offset values
+	@param:		offset values
+	@result:	void
+*/
+void Vertex::translate(int X,  int Y){
+	c3D.X+=X;
+	c3D.Y+=Y;
+}
+
+/*
 	Function:	Copy cartesian and absolute coordinate to this vertex
 	@param:		Another vertex
 	@return:	this
