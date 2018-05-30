@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1526690379 "/Users/AzimeX/Documents/practice/ncurses/immerse/docs/MANUAL/MANUAL.tex" "MANUAL.pdf" "MANUAL" 1526690380
-  "/Users/AzimeX/Documents/practice/ncurses/immerse/docs/MANUAL/MANUAL.tex" 1526690379 540 bc16ca077e25f98451fe8e0bd1d39141 ""
+["pdflatex"] 1527689236 "/Users/AzimeX/Documents/Projects/GitProjects/Concept/Immerse/docs/MANUAL/MANUAL.tex" "MANUAL.pdf" "MANUAL" 1527689237
+  "/Users/AzimeX/Documents/Projects/GitProjects/Concept/Immerse/docs/MANUAL/MANUAL.tex" 1527689236 556 cab53690505dd57cf1f5c2a238b71221 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1480098701 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1480098701 1292 21c1c5bfeaebccffdb478fd231a0997d ""
@@ -27,9 +27,9 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "MANUAL.aux" 1526690380 103 74aec0db75eeb5673e68a46cf33b892d ""
-  "MANUAL.tex" 1526690379 540 bc16ca077e25f98451fe8e0bd1d39141 ""
+  "MANUAL.aux" 1527689237 103 74aec0db75eeb5673e68a46cf33b892d ""
+  "MANUAL.tex" 1527689236 556 cab53690505dd57cf1f5c2a238b71221 ""
   (generated)
+  "MANUAL.aux"
   "MANUAL.log"
   "MANUAL.pdf"
-  "MANUAL.aux"

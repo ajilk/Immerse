@@ -1,8 +1,8 @@
-PWD /Users/AzimeX/Documents/practice/ncurses/immerse/docs/MANUAL
+PWD /Users/AzimeX/Documents/Projects/GitProjects/Concept/Immerse/docs/MANUAL
 INPUT /usr/local/texlive/2017/texmf.cnf
 INPUT /usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/AzimeX/Documents/practice/ncurses/immerse/docs/MANUAL/MANUAL.tex
+INPUT /Users/AzimeX/Documents/Projects/GitProjects/Concept/Immerse/docs/MANUAL/MANUAL.tex
 OUTPUT MANUAL.log
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/memoir/memoir.cls
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/memoir/memoir.cls
