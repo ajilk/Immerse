@@ -29,9 +29,9 @@ public:
 
 	// Transformations
 	void translate(int Y, int X);
-	/*
-void dilate(float factor);
 
+	/*
+	void dilate(float factor);
 	void rotateX(float angle)
 	void rotateY(float angle)
 	reflect();		// Not necessary
