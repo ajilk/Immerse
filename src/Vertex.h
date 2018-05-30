@@ -18,9 +18,9 @@ public:
 	Vertex(int Y, int X, int Z) { c3D.Y = Y; c3D.X = X; c3D.Z = Z; };
 
 	Coordinate get3D() const { return c3D; }
-	Coordinate get2D() { 
-		c2D.X = c3D.X/c3D.Z+1900/2;
-		c2D.Y = c3D.Y/c3D.Z+358/2;
+	Coordinate get2D(Screen &screen) { 
+		c2D.X = c3D.X/c3D.Z+screen.getColumns()/2;
+		c2D.Y = c3D.Y/c3D.Z+screen.getRows()/2;
 		return c2D; 
 	}
 
