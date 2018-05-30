@@ -14,9 +14,9 @@ _Run_
 
 ### Controls  
 _Move Left/Down/Up/Right_  
-h/j/k/l  
+`h/j/k/l`  
 _Zoom IN/OUT_  
-i/o  
+`i/o`
 
 Features To be Implemented:  
 _Rotation_  
