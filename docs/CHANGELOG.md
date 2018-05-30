@@ -1,6 +1,6 @@
 # Change Log
 
-## [v0.0.4 (2018-05-25)](/tree/v0.0.4)
+## [v0.0.4 (2018-05-25)](b70877b7)
 - redefine vertex (changed from old name Point) in terms of 3D 
   coordinates
 
