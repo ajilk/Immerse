@@ -1,6 +1,6 @@
 # Change Log
 
-## [v0.0.5](https://github.cmm/azimex/Immerse/tree/v0.0.5)
+## [v0.0.5](https://github.com/azimex/Immerse/tree/v0.0.5)
 [Full Changelog](https://github.com/azimex/Immerse/compare/v0.0.4...HEAD)
 - Update Documentation
 - Implemente weak perspective
