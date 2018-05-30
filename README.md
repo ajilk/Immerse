@@ -12,14 +12,14 @@ _Change directory and make_
 _Run_  
 `make run`  
 
-### Controls
-_Move Left/Down/Up/Right_
-h/j/k/l
-_Zoom IN/OUT_
-i/o
+### Controls  
+_Move Left/Down/Up/Right_  
+h/j/k/l  
+_Zoom IN/OUT_  
+i/o  
 
 Features To be Implemented:  
-_Rotate_  
+_Rotation_  
 _Perspective Projection_
 
 ---
