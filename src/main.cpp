@@ -35,21 +35,27 @@ void line(Vertex v1, Vertex v2, Screen& screen){
 }
 
 void box(Screen &screen, Coordinate v1, Coordinate v2, Coordinate v3, Coordinate v4, int x, int y, int z){
-	line(* new Vertex(v1.Y+y, v1.X+x, v1.Z+z),* new Vertex(v2.Y+y, v2.X+x, v2.Z+z), screen);
-	line(* new Vertex(v1.Y+y, v1.X+x, v1.Z+z),* new Vertex(v3.Y+y, v3.X+x, v3.Z+z), screen);
-	line(* new Vertex(v4.Y+y, v4.X+x, v4.Z+z),* new Vertex(v3.Y+y, v3.X+x, v3.Z+z), screen);
-	line(* new Vertex(v4.Y+y, v4.X+x, v4.Z+z),* new Vertex(v2.Y+y, v2.X+x, v2.Z+z), screen);
-	line(* new Vertex(screen.getRows(), -screen.getColumns(), 1), * new Vertex(0,0,1), screen);
-	line(* new Vertex(2*screen.getRows(), 2*screen.getColumns(), 1), * new Vertex(0,0,1), screen);
+	// line(* new Vertex(v1.Y+y, v1.X+x, v1.Z+z),* new Vertex(v2.Y+y, v2.X+x, v2.Z+z), screen);
+	// line(* new Vertex(v1.Y+y, v1.X+x, v1.Z+z),* new Vertex(v3.Y+y, v3.X+x, v3.Z+z), screen);
+	// line(* new Vertex(v4.Y+y, v4.X+x, v4.Z+z),* new Vertex(v3.Y+y, v3.X+x, v3.Z+z), screen);
+	// line(* new Vertex(v4.Y+y, v4.X+x, v4.Z+z),* new Vertex(v2.Y+y, v2.X+x, v2.Z+z), screen);
+
+	for(int i=v1.X; i<v2.X; i++){
+		line(* new Vertex(v1.Y+y, i+x, v1.Z+z), * new Vertex(v3.Y+y, i+x, v3.Z+z), screen);
+	}
 }
 
 int main(int argc, char **argv){
     Screen screen;
+	Vertex v1(1,1,1);
+	Vertex v2(1,1,20);
+
+
 	int z = 0, x=0, y=0; //Offest values
-	Coordinate v1(-screen.getRows()/2,-screen.getColumns()/2,1);
-	Coordinate v2(1500,-screen.getColumns()/2,1);
-	Coordinate v3(-screen.getRows()/2,5000,1);
-	Coordinate v4(1500,5000,1);
+	// Coordinate v1(-screen.getRows()/2,-screen.getColumns()/2,1);
+	// Coordinate v2(1500,-screen.getColumns()/2,1);
+	// Coordinate v3(-screen.getRows()/2,5000,1);
+	// Coordinate v4(1500,5000,1);
 	char ch;
 	while(ch != 'q' && ch != 'Q'){
 		if(screen.kbhit()){
@@ -72,11 +78,14 @@ int main(int argc, char **argv){
 			if(z >= 120){
 				z = 0;
 			}
-			box(screen, v1,v2,v3,v4,x,y,z);
 		}
-
+		line(* new Vertex(0+y, 0+x, 2+z), * new Vertex(0+y, 0+x, 1+z), screen);
+		line(* new Vertex(0+y, 400+x, 2+z), * new Vertex(0+y, 400+x, 1+z), screen);
+		line(* new Vertex(150+y, 0+x, 2+z), * new Vertex(150+y, 0+x, 1+z), screen);
+		line(* new Vertex(150+y, 400+x, 2+z), * new Vertex(150+y, 400+x, 1+z), screen);
+		box(screen, * new Coordinate(0,0,1), * new Coordinate(0,400,1), * new Coordinate(150, 0,1), * new Coordinate(150, 400, 1),x,y,z);
+		box(screen, * new Coordinate(0,0,2), * new Coordinate(0,400,2), * new Coordinate(150, 0,2), * new Coordinate(150, 400, 2),x,y,z);
 	}
-	// line(v1, v2, screen);
 	refresh();
 
     // // Vertex vertex[30];
