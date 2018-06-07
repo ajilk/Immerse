@@ -1,8 +1,6 @@
 # Immerse
 
-<br/>
-<br/>
-![demo](demo.gif)
+<br/> <br/> <img src="demo.gif" width="400" /> <br/> <br/>
 
 Rendering of 3D objects on a terminal screen using ASCII characters  
 _(My attempt to learning how computer graphics works from ground up with 
