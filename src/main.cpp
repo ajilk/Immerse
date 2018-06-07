@@ -4,12 +4,8 @@
 #include "Screen.h"
 #include "Vertex.h"
 // #include "tests/test.h"
-int abs (int n)
-{
-    return ( (n>0) ? n : ( n * (-1)));
-}
 
-//DDA
+//DDA Algorithm to draw lines
 void line(Vertex v1, Vertex v2, Screen& screen){
     // calculate dx & dy
     int dx = v2.get2D(screen).X - v1.get2D(screen).X;
@@ -35,14 +31,14 @@ void line(Vertex v1, Vertex v2, Screen& screen){
 }
 
 void box(Screen &screen, Coordinate v1, Coordinate v2, Coordinate v3, Coordinate v4, int x, int y, int z){
-	// line(* new Vertex(v1.Y+y, v1.X+x, v1.Z+z),* new Vertex(v2.Y+y, v2.X+x, v2.Z+z), screen);
-	// line(* new Vertex(v1.Y+y, v1.X+x, v1.Z+z),* new Vertex(v3.Y+y, v3.X+x, v3.Z+z), screen);
-	// line(* new Vertex(v4.Y+y, v4.X+x, v4.Z+z),* new Vertex(v3.Y+y, v3.X+x, v3.Z+z), screen);
-	// line(* new Vertex(v4.Y+y, v4.X+x, v4.Z+z),* new Vertex(v2.Y+y, v2.X+x, v2.Z+z), screen);
+	line(* new Vertex(v1.Y+y, v1.X+x, v1.Z+z),* new Vertex(v2.Y+y, v2.X+x, v2.Z+z), screen);
+	line(* new Vertex(v1.Y+y, v1.X+x, v1.Z+z),* new Vertex(v3.Y+y, v3.X+x, v3.Z+z), screen);
+	line(* new Vertex(v4.Y+y, v4.X+x, v4.Z+z),* new Vertex(v3.Y+y, v3.X+x, v3.Z+z), screen);
+	line(* new Vertex(v4.Y+y, v4.X+x, v4.Z+z),* new Vertex(v2.Y+y, v2.X+x, v2.Z+z), screen);
 
-	for(int i=v1.X; i<v2.X; i++){
-		line(* new Vertex(v1.Y+y, i+x, v1.Z+z), * new Vertex(v3.Y+y, i+x, v3.Z+z), screen);
-	}
+	// for(int i=v1.X; i<v2.X; i++){
+	// 	line(* new Vertex(v1.Y+y, i+x, v1.Z+z), * new Vertex(v3.Y+y, i+x, v3.Z+z), screen);
+	// }
 }
 
 int main(int argc, char **argv){
@@ -52,10 +48,6 @@ int main(int argc, char **argv){
 
 
 	int z = 0, x=0, y=0; //Offest values
-	// Coordinate v1(-screen.getRows()/2,-screen.getColumns()/2,1);
-	// Coordinate v2(1500,-screen.getColumns()/2,1);
-	// Coordinate v3(-screen.getRows()/2,5000,1);
-	// Coordinate v4(1500,5000,1);
 	char ch;
 	while(ch != 'q' && ch != 'Q'){
 		if(screen.kbhit()){
@@ -86,35 +78,5 @@ int main(int argc, char **argv){
 		box(screen, * new Coordinate(0,0,1), * new Coordinate(0,400,1), * new Coordinate(150, 0,1), * new Coordinate(150, 400, 1),x,y,z);
 		box(screen, * new Coordinate(0,0,2), * new Coordinate(0,400,2), * new Coordinate(150, 0,2), * new Coordinate(150, 400, 2),x,y,z);
 	}
-	refresh();
-
-    // // Vertex vertex[30];
-    // // for(int i=-15; i<15; i++){
-    // //     vertex[i+15] = *(new Vertex(i+15, i*i + 4*i + 2));
-    // //     vertex[i+15].convert(screen);
-    // //     vertex[i+15].print(vertex[i+15].getAbsolute().Y, vertex[i+15].getAbsolute().X, screen);
-    // //     refresh();
-    // // }
-
-    // vertex[0].convert(screen);
-    // for(int i=1; i<30; i++){
-    //     vertex[i] = *(new Vertex(vertex[i-1].getCartesian().Y-1, vertex[i-1].getCartesian().X-10));
-    //     vertex[i].convert(screen);
-    // }
-    // for(int i=0; i<30; i++){
-    //     vertex[i].print(vertex[i].getAbsolute().Y, vertex[i].getAbsolute().X, screen);
-    //     refresh();
-    //     // usleep(200000);
-    //     // clear();
-    // }
-
-    // Vertex vertex(10, 10);
-    // vertex.convert(screen);
-    // vertex.print(1,2, screen);
-
-    // Call this only when dealing with tests
-    // screen.~Screen();
-    // testing::InitGoogleTest(&argc, argv);
-    // return RUN_ALL_TESTS();
     return 0;
 }
