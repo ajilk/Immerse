@@ -18,8 +18,8 @@ _Run_
 _Move Left/Down/Up/Right_  
 `h/j/k/l`  
 _Zoom IN/OUT_  
-`i/o`
-_Quit_
+`i/o`  
+_Quit_  
 `q/Q`
 
 Features To be Implemented:  
